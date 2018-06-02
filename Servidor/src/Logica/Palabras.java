@@ -54,12 +54,11 @@ public class Palabras {
         plbrs[29]="Rusia".toUpperCase();
     }
     
-    public void randomWords(){
-        
+    public String randomWord(){
         //Genera una palabra aleatoriamente
         ran = (int) 0 + (int) (Math.random() * ((plbrs.length - 1) + 1));
         System.out.println(plbrs[ran]);
-        
+        return plbrs[ran];
     }
     
 
