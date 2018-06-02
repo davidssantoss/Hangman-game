@@ -5,9 +5,7 @@
  */
 package servidor;
 
-import Vista.Interfaz;
 import conexionConector.Conector;
-import javax.swing.JButton;
 
 /**
  *
