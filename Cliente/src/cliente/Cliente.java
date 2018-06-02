@@ -6,6 +6,7 @@
 package cliente;
 
 import Vista.Interfaz;
+import conexionCliente.Conector;
 
 /**
  *
@@ -18,8 +19,10 @@ public class Cliente {
      */
     public static void main(String[] args) {
         
-        Interfaz i = new Interfaz();
-        i.setVisible(true);
+//        Interfaz i = new Interfaz();
+//        i.setVisible(true);
+        Conector c = new Conector();
+        c.conectar();
     }
     
 }

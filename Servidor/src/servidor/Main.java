@@ -6,6 +6,7 @@
 package servidor;
 
 import Vista.Interfaz;
+import conexionConector.Conector;
 import javax.swing.JButton;
 
 /**
@@ -18,8 +19,10 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Interfaz i = new Interfaz();
-        i.setVisible(true);
+//        Interfaz i = new Interfaz();
+//        i.setVisible(true);
+        Conector c = new Conector();
+        c.iniciar();
         
     }
     
