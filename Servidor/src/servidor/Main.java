@@ -1,15 +1,14 @@
 package servidor;
 
 import Logica.Palabras;
-import conexionConector.Conector;
+import conexionConector.ThreadConector;
 
 public class Main {
 
     public static void main(String[] args) {
         Palabras p = new Palabras();
-        Conector c = new Conector(p.randomWord());
+        ThreadConector c = new ThreadConector(p.randomWord());
         c.iniciar();
-        
     }
     
 }
