@@ -14,7 +14,8 @@ public class Conector {
 
     private char letter;
     private String serverWord;
-
+    private boolean connectionError;
+    
     public Conector() {
         conectar();
     }

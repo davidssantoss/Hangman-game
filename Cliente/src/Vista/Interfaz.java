@@ -1,6 +1,8 @@
 package Vista;
 
+import java.awt.FlowLayout;
 import javax.swing.JLabel;
+import logica.GameLogic;
 
 /**
  *
@@ -10,9 +12,11 @@ public class Interfaz extends javax.swing.JFrame {
     
     private char letter;
     private String word;
+    private GameLogic l;
     
     public Interfaz() {
         initComponents();
+        l = new GameLogic();
     }
 
     public void setWord(String word) {
@@ -22,16 +26,28 @@ public class Interfaz extends javax.swing.JFrame {
     public char getLetter() {
         return this.letter;
     }
+
+    public void setLetter(char letter) {
+        this.letter = letter;
+    }
     
     private void printWord() {
+        l.setReadLetter(letter);
+        l.testLetter();
+        this.word = l.getFormedWord();
         panelWord.removeAll();
-        JLabel[] letters = new JLabel[word.length()];
-        for (int i = 0; i < word.length(); i++) {
+        panelWord.revalidate();
+        panelWord.repaint();
+        panelWord.setLayout(new FlowLayout());
+        JLabel lblLetter;
+        for (int i = 0; i < this.word.split(",").length; i++) {
+            lblLetter = new JLabel();
             int x = 10 + (i*40);
-            letters[i].setText(word.charAt(i)+"");
-            letters[i].setBounds(x, 0, 40, 30);
-            this.panelWord.add(letters[i]);
+            lblLetter.setText(word.split(",")[i]);
+            lblLetter.setBounds(x, 10, 40, 30);
+            panelWord.add(lblLetter);
         }
+        this.add(panelWord);
     }
             
     /**
@@ -277,6 +293,11 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnStart.setText("¡ COMENZAR JUEGO !");
+        btnStart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStartActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelWordLayout = new javax.swing.GroupLayout(panelWord);
         panelWord.setLayout(panelWordLayout);
@@ -422,116 +443,149 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void btnQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQActionPerformed
         this.letter = btnQ.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnQActionPerformed
 
     private void btnWActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWActionPerformed
         this.letter = btnW.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnWActionPerformed
 
     private void btnEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEActionPerformed
         this.letter = btnE.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnEActionPerformed
 
     private void btnRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRActionPerformed
         this.letter = btnR.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnRActionPerformed
 
     private void btnTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTActionPerformed
         this.letter = btnT.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnTActionPerformed
 
     private void btnYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnYActionPerformed
         this.letter = btnY.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnYActionPerformed
 
     private void btnUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUActionPerformed
         this.letter = btnU.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnUActionPerformed
 
     private void btnIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIActionPerformed
         this.letter = btnI.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnIActionPerformed
 
     private void btnOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOActionPerformed
         this.letter = btnO.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnOActionPerformed
 
     private void btnPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPActionPerformed
         this.letter = btnP.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnPActionPerformed
 
     private void btnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAActionPerformed
         this.letter = btnA.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnAActionPerformed
 
     private void btnSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSActionPerformed
         this.letter = btnS.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnSActionPerformed
 
     private void btnDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDActionPerformed
         this.letter = btnD.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnDActionPerformed
 
     private void btnFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFActionPerformed
         this.letter = btnF.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnFActionPerformed
 
     private void btnGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGActionPerformed
         this.letter = btnG.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnGActionPerformed
 
     private void btnHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHActionPerformed
         this.letter = btnH.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnHActionPerformed
 
     private void btnJActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJActionPerformed
         this.letter = btnJ.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnJActionPerformed
 
     private void btnKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKActionPerformed
         this.letter = btnK.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnKActionPerformed
 
     private void btnLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLActionPerformed
         this.letter = btnL.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnLActionPerformed
 
     private void btnÑActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnÑActionPerformed
         this.letter = btnÑ.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnÑActionPerformed
 
     private void btnZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZActionPerformed
         this.letter = btnZ.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnZActionPerformed
 
     private void btnXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXActionPerformed
         this.letter = btnX.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnXActionPerformed
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
         this.letter = btnC.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVActionPerformed
         this.letter = btnV.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnVActionPerformed
 
     private void btnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBActionPerformed
         this.letter = btnB.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnBActionPerformed
 
     private void btnNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNActionPerformed
         this.letter = btnN.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnNActionPerformed
 
     private void btnMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMActionPerformed
         this.letter = btnM.getText().charAt(0);
+        printWord();
     }//GEN-LAST:event_btnMActionPerformed
 
     // actionPerformed para cambiar la imgen
     private void btnCambiarImagenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCambiarImagenActionPerformed
         lblImgAhorcado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/8.jpg"))); // NOI18N
     }//GEN-LAST:event_btnCambiarImagenActionPerformed
+
+    private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
+        this.btnStart.setVisible(false);
+        this.letter = '-';
+        printWord();
+    }//GEN-LAST:event_btnStartActionPerformed
 
     /**
      * @param args the command line arguments
