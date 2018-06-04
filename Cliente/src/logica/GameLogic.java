@@ -5,13 +5,14 @@ import conexionCliente.Conector;
 public class GameLogic {
 
     private String formedWord, oldWord;
-    private boolean continueGame;
+    private boolean continueGame, win;
     private char readLetter;
     private int hangedLevel = 0;
     private Conector c;
-            
+
     public GameLogic() {
         this.continueGame = true;
+        this.win = false;
         c = new Conector();
         this.oldWord = "";
     }
@@ -23,11 +24,15 @@ public class GameLogic {
      */
     public void testLetter() {
         try {
-            c.setLetter(this.readLetter);
-            this.continueGame = c.sendLetter();
-            this.formedWord = formatWord(c.getServerWord());
-            validateWord();
-            this.oldWord = formedWord;
+            if (hangedLevel > 7) {
+                this.continueGame = false;
+            } else {
+                c.setLetter(this.readLetter);
+                this.continueGame = c.sendLetter();
+                this.formedWord = formatWord(c.getServerWord());
+                validateWord();
+                this.oldWord = formedWord;
+            }
         } catch (Exception e) {
             System.out.println("Error in thread logica.testLetter() " + e.getMessage());
         }
@@ -43,14 +48,14 @@ public class GameLogic {
         formatedWord = formatedWord.replace("]", "");
         return formatedWord;
     }
-    
+
     private void validateWord() {
         if (this.formedWord.equals(oldWord)) {
             hangedLevel++;
-            if (hangedLevel == 9) {
-                this.continueGame = false;
-            }
         }
+        if (!this.formedWord.contains("_")) {
+            this.win = true;
+        } 
     }
 
     public void setReadLetter(char readLetter) {
@@ -71,5 +76,9 @@ public class GameLogic {
 
     public int getHangedLevel() {
         return hangedLevel;
+    }
+
+    public boolean isWin() {
+        return win;
     }
 }

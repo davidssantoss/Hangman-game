@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class ThreadConector {
 
     private final int PUERTO = 9000;
-    private int opportunities = 9;
+    private int opportunities = 8;
     private ArrayList word, formedWord;
 
     private ServerSocket server;

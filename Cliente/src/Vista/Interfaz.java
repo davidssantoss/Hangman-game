@@ -2,6 +2,7 @@ package Vista;
 
 import java.awt.FlowLayout;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import logica.GameLogic;
 
 public class Interfaz extends javax.swing.JFrame {
@@ -28,30 +29,42 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     private void printWord() {
+        checkWinner();
+        l.setReadLetter(letter);
+        l.testLetter();
+        this.word = l.getFormedWord();
+        panelWord.setLayout(new FlowLayout());
+        JLabel lblLetter;
+        for (int i = 0; i < this.word.split(",").length; i++) {
+            lblLetter = new JLabel();
+            int x = 10 + (i * 40);
+            lblLetter.setText(word.split(",")[i]);
+            lblLetter.setBounds(x, 10, 40, 30);
+            panelWord.add(lblLetter);
+        }
+        this.add(panelWord);
+    }
+    
+    private void cleanPanelWord() {
         panelWord.removeAll();
         panelWord.revalidate();
         panelWord.repaint();
-        
-        if (l.isContinueGame()) {
-            l.setReadLetter(letter);
-            l.testLetter();
-            System.out.println("/images/"+l.getHangedLevel()+".jpg");
-            lblImgAhorcado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/"+l.getHangedLevel()+".jpg"))); // NOI18N
-            this.word = l.getFormedWord();
-            panelWord.setLayout(new FlowLayout());
-            JLabel lblLetter;
-            for (int i = 0; i < this.word.split(",").length; i++) {
-                lblLetter = new JLabel();
-                int x = 10 + (i * 40);
-                lblLetter.setText(word.split(",")[i]);
-                lblLetter.setBounds(x, 10, 40, 30);
-                panelWord.add(lblLetter);
-            }
+    }
+    
+    private void checkWinner() {
+        if (l.isWin()) {
+            JOptionPane.showMessageDialog(null, "GANASTE", null, JOptionPane.INFORMATION_MESSAGE); //Tipo de mensaje
         } else {
-
+            cleanPanelWord();
+            checkHangedLevel();
         }
-        this.add(panelWord);
+    }
 
+    private void checkHangedLevel() {
+        lblImgAhorcado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/" + l.getHangedLevel() + ".jpg"))); // NOI18N
+        if (!l.isContinueGame()) {
+            JOptionPane.showMessageDialog(null, "EL JUEGO HA FINALIZADO", null, JOptionPane.ERROR_MESSAGE); //Tipo de mensaje
+        }
     }
 
     /**
@@ -610,16 +623,24 @@ public class Interfaz extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Interfaz.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Interfaz.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Interfaz.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Interfaz.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
