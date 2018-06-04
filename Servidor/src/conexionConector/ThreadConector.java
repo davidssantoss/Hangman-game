@@ -43,7 +43,6 @@ public class ThreadConector {
                 printInfo(letter);
             }
 
-
         } catch (IOException e) {
             System.out.println("Error en (servidor) conexion.Conector() " + e.getMessage());
         };
