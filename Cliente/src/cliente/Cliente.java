@@ -15,12 +15,13 @@ public class Cliente {
      */
     public static void main(String[] args) {
 
-//        Interfaz i = new Interfaz();
-//        i.setVisible(true);
         Conector c;
+        Interfaz i;
         try {
-            c = new Conector();
-            c.conectar();
+            i = new Interfaz();
+            i.setVisible(true);
+            //c = new Conector();
+            //c.conectar();
         } catch (Exception e) {
             System.out.println("Error en cliente.Cliente(): "+e.getMessage());
         }
