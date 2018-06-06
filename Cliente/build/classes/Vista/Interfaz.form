@@ -152,6 +152,7 @@
     <Component class="javax.swing.JButton" name="btnQ">
       <Properties>
         <Property name="text" type="java.lang.String" value="Q"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQActionPerformed"/>
@@ -160,6 +161,7 @@
     <Component class="javax.swing.JButton" name="btnW">
       <Properties>
         <Property name="text" type="java.lang.String" value="W"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnWActionPerformed"/>
@@ -168,6 +170,7 @@
     <Component class="javax.swing.JButton" name="btnE">
       <Properties>
         <Property name="text" type="java.lang.String" value="E"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEActionPerformed"/>
@@ -176,6 +179,7 @@
     <Component class="javax.swing.JButton" name="btnR">
       <Properties>
         <Property name="text" type="java.lang.String" value="R"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRActionPerformed"/>
@@ -184,6 +188,7 @@
     <Component class="javax.swing.JButton" name="btnT">
       <Properties>
         <Property name="text" type="java.lang.String" value="T"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTActionPerformed"/>
@@ -192,6 +197,7 @@
     <Component class="javax.swing.JButton" name="btnY">
       <Properties>
         <Property name="text" type="java.lang.String" value="Y"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnYActionPerformed"/>
@@ -200,6 +206,7 @@
     <Component class="javax.swing.JButton" name="btnU">
       <Properties>
         <Property name="text" type="java.lang.String" value="U"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUActionPerformed"/>
@@ -208,6 +215,7 @@
     <Component class="javax.swing.JButton" name="btnI">
       <Properties>
         <Property name="text" type="java.lang.String" value="I"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnIActionPerformed"/>
@@ -216,6 +224,7 @@
     <Component class="javax.swing.JButton" name="btnO">
       <Properties>
         <Property name="text" type="java.lang.String" value="O"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnOActionPerformed"/>
@@ -224,6 +233,7 @@
     <Component class="javax.swing.JButton" name="btnP">
       <Properties>
         <Property name="text" type="java.lang.String" value="P"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPActionPerformed"/>
@@ -232,6 +242,7 @@
     <Component class="javax.swing.JButton" name="btnA">
       <Properties>
         <Property name="text" type="java.lang.String" value="A"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAActionPerformed"/>
@@ -240,6 +251,7 @@
     <Component class="javax.swing.JButton" name="btnS">
       <Properties>
         <Property name="text" type="java.lang.String" value="S"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSActionPerformed"/>
@@ -248,6 +260,7 @@
     <Component class="javax.swing.JButton" name="btnD">
       <Properties>
         <Property name="text" type="java.lang.String" value="D"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDActionPerformed"/>
@@ -256,6 +269,7 @@
     <Component class="javax.swing.JButton" name="btnF">
       <Properties>
         <Property name="text" type="java.lang.String" value="F"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFActionPerformed"/>
@@ -264,6 +278,7 @@
     <Component class="javax.swing.JButton" name="btnG">
       <Properties>
         <Property name="text" type="java.lang.String" value="G"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGActionPerformed"/>
@@ -272,6 +287,7 @@
     <Component class="javax.swing.JButton" name="btnH">
       <Properties>
         <Property name="text" type="java.lang.String" value="H"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHActionPerformed"/>
@@ -280,6 +296,7 @@
     <Component class="javax.swing.JButton" name="btnJ">
       <Properties>
         <Property name="text" type="java.lang.String" value="J"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnJActionPerformed"/>
@@ -288,6 +305,7 @@
     <Component class="javax.swing.JButton" name="btnK">
       <Properties>
         <Property name="text" type="java.lang.String" value="K"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKActionPerformed"/>
@@ -296,6 +314,7 @@
     <Component class="javax.swing.JButton" name="btnL">
       <Properties>
         <Property name="text" type="java.lang.String" value="L"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLActionPerformed"/>
@@ -304,6 +323,7 @@
     <Component class="javax.swing.JButton" name="btn&#xd1;">
       <Properties>
         <Property name="text" type="java.lang.String" value="&#xd1;"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn&#xd1;ActionPerformed"/>
@@ -312,6 +332,7 @@
     <Component class="javax.swing.JButton" name="btnZ">
       <Properties>
         <Property name="text" type="java.lang.String" value="Z"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnZActionPerformed"/>
@@ -320,6 +341,7 @@
     <Component class="javax.swing.JButton" name="btnX">
       <Properties>
         <Property name="text" type="java.lang.String" value="X"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnXActionPerformed"/>
@@ -328,6 +350,7 @@
     <Component class="javax.swing.JButton" name="btnC">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCActionPerformed"/>
@@ -336,6 +359,7 @@
     <Component class="javax.swing.JButton" name="btnV">
       <Properties>
         <Property name="text" type="java.lang.String" value="V"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVActionPerformed"/>
@@ -344,6 +368,7 @@
     <Component class="javax.swing.JButton" name="btnB">
       <Properties>
         <Property name="text" type="java.lang.String" value="B"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBActionPerformed"/>
@@ -352,6 +377,7 @@
     <Component class="javax.swing.JButton" name="btnN">
       <Properties>
         <Property name="text" type="java.lang.String" value="N"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNActionPerformed"/>
@@ -360,6 +386,7 @@
     <Component class="javax.swing.JButton" name="btnM">
       <Properties>
         <Property name="text" type="java.lang.String" value="M"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMActionPerformed"/>
@@ -373,6 +400,9 @@
       </Properties>
     </Component>
     <Container class="javax.swing.JPanel" name="panelWord">
+      <Properties>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">

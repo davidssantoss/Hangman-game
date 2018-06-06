@@ -113,6 +113,7 @@ public class Interfaz extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnQ.setText("Q");
+        btnQ.setEnabled(false);
         btnQ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnQActionPerformed(evt);
@@ -120,6 +121,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnW.setText("W");
+        btnW.setEnabled(false);
         btnW.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnWActionPerformed(evt);
@@ -127,6 +129,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnE.setText("E");
+        btnE.setEnabled(false);
         btnE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEActionPerformed(evt);
@@ -134,6 +137,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnR.setText("R");
+        btnR.setEnabled(false);
         btnR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRActionPerformed(evt);
@@ -141,6 +145,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnT.setText("T");
+        btnT.setEnabled(false);
         btnT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTActionPerformed(evt);
@@ -148,6 +153,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnY.setText("Y");
+        btnY.setEnabled(false);
         btnY.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnYActionPerformed(evt);
@@ -155,6 +161,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnU.setText("U");
+        btnU.setEnabled(false);
         btnU.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUActionPerformed(evt);
@@ -162,6 +169,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnI.setText("I");
+        btnI.setEnabled(false);
         btnI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIActionPerformed(evt);
@@ -169,6 +177,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnO.setText("O");
+        btnO.setEnabled(false);
         btnO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnOActionPerformed(evt);
@@ -176,6 +185,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnP.setText("P");
+        btnP.setEnabled(false);
         btnP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPActionPerformed(evt);
@@ -183,6 +193,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnA.setText("A");
+        btnA.setEnabled(false);
         btnA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAActionPerformed(evt);
@@ -190,6 +201,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnS.setText("S");
+        btnS.setEnabled(false);
         btnS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSActionPerformed(evt);
@@ -197,6 +209,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnD.setText("D");
+        btnD.setEnabled(false);
         btnD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDActionPerformed(evt);
@@ -204,6 +217,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnF.setText("F");
+        btnF.setEnabled(false);
         btnF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFActionPerformed(evt);
@@ -211,6 +225,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnG.setText("G");
+        btnG.setEnabled(false);
         btnG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGActionPerformed(evt);
@@ -218,6 +233,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnH.setText("H");
+        btnH.setEnabled(false);
         btnH.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHActionPerformed(evt);
@@ -225,6 +241,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnJ.setText("J");
+        btnJ.setEnabled(false);
         btnJ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnJActionPerformed(evt);
@@ -232,6 +249,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnK.setText("K");
+        btnK.setEnabled(false);
         btnK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnKActionPerformed(evt);
@@ -239,6 +257,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnL.setText("L");
+        btnL.setEnabled(false);
         btnL.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLActionPerformed(evt);
@@ -246,6 +265,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnÑ.setText("Ñ");
+        btnÑ.setEnabled(false);
         btnÑ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnÑActionPerformed(evt);
@@ -253,6 +273,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnZ.setText("Z");
+        btnZ.setEnabled(false);
         btnZ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnZActionPerformed(evt);
@@ -260,6 +281,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnX.setText("X");
+        btnX.setEnabled(false);
         btnX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnXActionPerformed(evt);
@@ -267,6 +289,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnC.setText("C");
+        btnC.setEnabled(false);
         btnC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCActionPerformed(evt);
@@ -274,6 +297,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnV.setText("V");
+        btnV.setEnabled(false);
         btnV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVActionPerformed(evt);
@@ -281,6 +305,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnB.setText("B");
+        btnB.setEnabled(false);
         btnB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBActionPerformed(evt);
@@ -288,6 +313,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnN.setText("N");
+        btnN.setEnabled(false);
         btnN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNActionPerformed(evt);
@@ -295,6 +321,7 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         btnM.setText("M");
+        btnM.setEnabled(false);
         btnM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMActionPerformed(evt);
@@ -302,6 +329,8 @@ public class Interfaz extends javax.swing.JFrame {
         });
 
         lblImgAhorcado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/0.jpg"))); // NOI18N
+
+        panelWord.setEnabled(false);
 
         btnStart.setText("¡ COMENZAR JUEGO !");
         btnStart.addActionListener(new java.awt.event.ActionListener() {
@@ -607,10 +636,45 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
         this.btnStart.setVisible(false);
+        this.panelWord.setEnabled(true);
+        enabledButtonsGame();
         this.letter = '-';
         printWord();
     }//GEN-LAST:event_btnStartActionPerformed
 
+    
+    private void enabledButtonsGame() {
+        this.btnQ.setEnabled(true);
+        this.btnW.setEnabled(true);
+        this.btnE.setEnabled(true);
+        this.btnR.setEnabled(true);
+        this.btnT.setEnabled(true);
+        this.btnY.setEnabled(true);
+        this.btnU.setEnabled(true);
+        this.btnI.setEnabled(true);
+        this.btnO.setEnabled(true);
+        this.btnP.setEnabled(true);
+        
+        this.btnA.setEnabled(true);
+        this.btnS.setEnabled(true);
+        this.btnD.setEnabled(true);
+        this.btnF.setEnabled(true);
+        this.btnG.setEnabled(true);
+        this.btnH.setEnabled(true);
+        this.btnJ.setEnabled(true);
+        this.btnK.setEnabled(true);
+        this.btnL.setEnabled(true);
+        this.btnÑ.setEnabled(true);
+        
+        this.btnZ.setEnabled(true);
+        this.btnX.setEnabled(true);
+        this.btnC.setEnabled(true);
+        this.btnV.setEnabled(true);
+        this.btnB.setEnabled(true);
+        this.btnN.setEnabled(true);
+        this.btnM.setEnabled(true);
+        
+    }
     /**
      * @param args the command line arguments
      */
