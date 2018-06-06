@@ -29,7 +29,7 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     private void printWord() {
-        checkWinner();
+        cleanPanelWord();
         l.setReadLetter(letter);
         l.testLetter();
         this.word = l.getFormedWord();
@@ -43,6 +43,7 @@ public class Interfaz extends javax.swing.JFrame {
             panelWord.add(lblLetter);
         }
         this.add(panelWord);
+        checkWinner();
     }
     
     private void cleanPanelWord() {
@@ -53,9 +54,10 @@ public class Interfaz extends javax.swing.JFrame {
     
     private void checkWinner() {
         if (l.isWin()) {
+            System.out.println("you winn");
             JOptionPane.showMessageDialog(null, "GANASTE", null, JOptionPane.INFORMATION_MESSAGE); //Tipo de mensaje
         } else {
-            cleanPanelWord();
+            System.out.println("not win yet...");
             checkHangedLevel();
         }
     }

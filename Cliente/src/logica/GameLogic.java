@@ -53,6 +53,7 @@ public class GameLogic {
         if (this.formedWord.equals(oldWord)) {
             hangedLevel++;
         }
+        System.out.println(this.formedWord);
         if (!this.formedWord.contains("_")) {
             this.win = true;
         } 
